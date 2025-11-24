@@ -51,13 +51,10 @@ public class StringAlgorithms {
     public static boolean detectPalindrome(String word) {
         // TODO: Implement this method
         word.toLowerCase();
-        word += " ";
         String backWord = "";
         for (int i = word.length() - 1; i >= 0; i--) {
            backWord += word.substring(i, i + 1);
         } 
-        backWord += " ";
-        System.out.println(word + backWord);
         if (backWord.equals(word)) {
            return true;
         } else {
