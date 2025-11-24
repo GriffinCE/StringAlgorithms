@@ -23,7 +23,6 @@ public class StringAlgorithms {
      */
     public static String reverseWord(String word) {
         // TODO: Implement this method
-        word += " ";
         String reverse = "";
         for (int i = word.length() - 1; i >= 0; i--) {
          //  System.out.print(word.substring(i, i + 1));
@@ -51,6 +50,7 @@ public class StringAlgorithms {
      */
     public static boolean detectPalindrome(String word) {
         // TODO: Implement this method
+        word.toLowerCase();
         word += " ";
         String backWord = "";
         for (int i = word.length() - 1; i >= 0; i--) {
@@ -61,7 +61,7 @@ public class StringAlgorithms {
         if (backWord.equals(word)) {
            return true;
         } else {
-        return false;
+           return false;
         }
     }
 
