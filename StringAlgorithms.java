@@ -50,7 +50,7 @@ public class StringAlgorithms {
      */
     public static boolean detectPalindrome(String word) {
         // TODO: Implement this method
-        word.toLowerCase();
+        word = word.toLowerCase();
         String backWord = "";
         for (int i = word.length() - 1; i >= 0; i--) {
            backWord += word.substring(i, i + 1);
@@ -98,6 +98,8 @@ public class StringAlgorithms {
         System.out.println("\nTesting detectPalindrome:");
         // Example:
         System.out.println(detectPalindrome("racecar"));
+        System.out.println(detectPalindrome("RaceCar"));
+
 
         System.out.println("\nTesting firstUniqueChar:");
         // Example:
