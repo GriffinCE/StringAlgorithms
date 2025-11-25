@@ -99,6 +99,8 @@ public class StringAlgorithms {
         // Example:
         System.out.println(detectPalindrome("racecar"));
         System.out.println(detectPalindrome("RaceCar"));
+        System.out.println(detectPalindrome("java"));
+
 
 
         System.out.println("\nTesting firstUniqueChar:");
